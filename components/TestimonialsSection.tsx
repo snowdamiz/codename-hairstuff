@@ -107,7 +107,7 @@ export default function TestimonialsSection() {
                   
                   {/* Comment with better typography */}
                   <p className="text-muted-foreground mb-6 leading-relaxed italic">
-                    "{testimonial.comment}"
+                    &ldquo;{testimonial.comment}&rdquo;
                   </p>
                   
                   {/* Footer with enhanced styling */}

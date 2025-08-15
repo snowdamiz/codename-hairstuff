@@ -38,7 +38,7 @@ export default function IngredientsSection() {
             <div>
               <Badge className="mb-4">Premium Quality</Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Powered by Africa's
+                Powered by Africa&apos;s
                 <span className="block text-primary">Ancient Beauty Secrets</span>
               </h2>
               <p className="text-lg text-muted-foreground">
