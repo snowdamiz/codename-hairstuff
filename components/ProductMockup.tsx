@@ -3,7 +3,7 @@ import { Sparkles } from 'lucide-react'
 
 export default function ProductMockup() {
   return (
-    <div className="relative w-full max-w-lg mx-auto perspective-1000">
+    <div className="relative w-full max-w-sm md:max-w-md lg:max-w-lg mx-auto">
       {/* Main Container with 3D effect */}
       <div className="relative transform-gpu hover:rotate-y-6 transition-transform duration-700">
         
@@ -11,14 +11,14 @@ export default function ProductMockup() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-accent/20 to-primary/30 rounded-3xl blur-2xl animate-pulse-glow" />
         
         {/* Main Product Card */}
-        <div className="relative glass-effect rounded-3xl p-8 overflow-hidden">
+        <div className="relative glass-effect rounded-3xl p-6 md:p-8 overflow-hidden">
           {/* Pattern overlay */}
           <div className="absolute inset-0 opacity-5 pattern-grid text-primary" />
           
           {/* Product Bottle */}
-          <div className="relative mx-auto w-56 h-72">
+          <div className="relative mx-auto w-48 md:w-56 h-64 md:h-72">
             {/* Bottle Shadow */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-40 h-8 bg-black/20 rounded-full blur-xl" />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 md:w-40 h-6 md:h-8 bg-black/20 rounded-full blur-xl" />
             
             {/* Bottle Body */}
             <div className="relative w-full h-full">
@@ -29,11 +29,11 @@ export default function ProductMockup() {
                      style={{ backgroundSize: '200% 100%' }} />
                 
                 {/* Label Area */}
-                <div className="absolute inset-x-4 top-1/3 bottom-1/4 bg-white/95 backdrop-blur rounded-xl p-4 shadow-inner">
-                  <div className="h-full flex flex-col items-center justify-center space-y-2">
-                    <Sparkles className="w-8 h-8 text-primary" />
-                    <h3 className="font-bold text-xl text-primary">CrownCare</h3>
-                    <p className="text-xs text-muted-foreground text-center">Moisture Lock Treatment</p>
+                <div className="absolute inset-x-3 md:inset-x-4 top-1/3 bottom-1/4 bg-white/95 backdrop-blur rounded-xl p-3 md:p-4 shadow-inner">
+                  <div className="h-full flex flex-col items-center justify-center space-y-1 md:space-y-2">
+                    <Sparkles className="w-6 md:w-8 h-6 md:h-8 text-primary" />
+                    <h3 className="font-bold text-lg md:text-xl text-primary">CrownCare</h3>
+                    <p className="text-[10px] md:text-xs text-muted-foreground text-center">Moisture Lock Treatment</p>
                     <div className="flex gap-1 mt-2">
                       <div className="w-1 h-1 rounded-full bg-primary/60" />
                       <div className="w-1 h-1 rounded-full bg-primary/60" />
@@ -65,21 +65,21 @@ export default function ProductMockup() {
           </div>
         </div>
         
-        {/* Floating Badges */}
-        <div className="absolute -top-4 -right-4 glass-effect rounded-full p-3 shadow-xl animate-scale-in" style={{ animationDelay: '0.5s' }}>
+        {/* Floating Badges - Hidden on mobile, repositioned on tablet/desktop */}
+        <div className="hidden sm:block absolute -top-2 sm:-top-4 -right-2 sm:-right-4 glass-effect rounded-full p-2 sm:p-3 shadow-xl animate-scale-in" style={{ animationDelay: '0.5s' }}>
           <div className="flex items-center gap-1">
-            <span className="text-2xl">⭐</span>
-            <span className="text-sm font-bold">4.9</span>
+            <span className="text-xl sm:text-2xl">⭐</span>
+            <span className="text-xs sm:text-sm font-bold">4.9</span>
           </div>
         </div>
         
-        <div className="absolute -bottom-4 -left-4 glass-effect rounded-full px-4 py-2 shadow-xl animate-scale-in" style={{ animationDelay: '0.7s' }}>
-          <p className="text-xs font-semibold flex items-center gap-1">
+        <div className="absolute -bottom-2 sm:-bottom-4 left-2 sm:-left-4 glass-effect rounded-full px-3 sm:px-4 py-1.5 sm:py-2 shadow-xl animate-scale-in" style={{ animationDelay: '0.7s' }}>
+          <p className="text-[10px] sm:text-xs font-semibold flex items-center gap-1">
             <span className="text-green-600">✓</span> 30-Day Guarantee
           </p>
         </div>
         
-        <div className="absolute top-1/2 -right-6 glass-effect rounded-full px-3 py-1 shadow-xl animate-scale-in" style={{ animationDelay: '0.9s' }}>
+        <div className="hidden md:block absolute top-1/2 -right-6 glass-effect rounded-full px-3 py-1 shadow-xl animate-scale-in" style={{ animationDelay: '0.9s' }}>
           <p className="text-xs font-semibold">Vegan</p>
         </div>
       </div>

@@ -38,7 +38,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="py-20 relative overflow-hidden">
+    <section id="features" className="py-16 md:py-20 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-secondary/10" />
       

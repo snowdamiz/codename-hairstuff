@@ -8,7 +8,7 @@ import ProductMockup from './ProductMockup'
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-20 pb-20 md:pb-0 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-muted via-background to-secondary/20" />
       
@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/5 via-transparent to-accent/5 rounded-full blur-3xl animate-pulse-glow" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="flex flex-wrap items-center gap-2">
@@ -102,7 +102,7 @@ export default function HeroSection() {
           </div>
 
           {/* Product Image */}
-          <div className="relative lg:pl-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="relative mt-12 lg:mt-0 lg:pl-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <ProductMockup />
           </div>
         </div>
